@@ -4,13 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ListaDecole</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav clas="navbar">
-        <img clas =""src="" alt="">
-        <button class="buttonnav">Haz clic</button>
+        <img clas ="logo" src="Imagenes/Sin título.pdf" alt="logo">
+        <button class="buttonnav">+Lista</button>
+        <button class="buttonnav">Editar</button>
+        <button class="buttonnav">Eliminar</button>
+        <img  class = "prefer"src="Imagenes/ajuste.pdf" alt="prefer">
 
     </nav>
-    
+    <main class="content">
+        <section class="formlist">
+            <form id="studentForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="curso">Curso:</label>
+                    <input type="text" class="form-control" id="curso" required>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="agregarEstudiante()">Agregar Estudiante</button>
+            </form>
+        </section>
+
+        <section class="formright">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Curso</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody">
+                    <!-- Los datos ingresados se mostrarán aquí -->
+                </tbody>
+            </table>
+        </section>
+        
+    </main>
 </body>
 </html>
