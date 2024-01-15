@@ -1,30 +1,56 @@
-body{
+.container{
     background-color:rgba(179, 224, 245, 1) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .navbar{
     background-color:rgba(179, 224, 245, 1) ;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.navbarright{
+    display: flex;
+   flex-direction: row;
+
 }
 .buttonnav{
     background-color:rgba(255, 169, 184, 1) ; 
     color: #fff; 
     padding: 10px 20px;
-    font-size: 16px;
+    font-family: 'acme', sans-serif;
+    font-size: 20px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0);
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 .logo{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+}
+.prefer{
+    width: 5%;
+    height: 5%;
 }
 .content{
     display: flex;
     flex-direction: row;
-    justify-items: ;
+    justify-content: space-between;
+    margin-top: 15%;
+}
+
+.formlist{
+    background-color: rgba(255, 226, 167, 1);
+    width: 40%;
+}
+
+.formright{
+    background-color:rgba(255, 169, 184, 1) ; 
+    width: 40%;
+
 }
