@@ -1,56 +1,59 @@
-.container{
-    background-color:rgba(179, 224, 245, 1) ;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.navbar{
-    background-color:rgba(179, 224, 245, 1) ;
-    display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-}
-
-.navbarright{
-    display: flex;
-   flex-direction: row;
+.container {
+    background-color: rgba(179, 224, 245, 1);
 
 }
-.buttonnav{
-    background-color:rgba(255, 169, 184, 1) ; 
-    color: #fff; 
+
+.navbar {
+    background-color: rgba(179, 224, 245, 1);
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.navbarright {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.buttonnav {
+    background-color: rgba(255, 169, 184, 1);
+    color: #fff;
     padding: 10px 20px;
     font-family: 'acme', sans-serif;
-    font-size: 20px;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0);
+    font-size: 16px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.logo{
+
+.logo {
     width: 10%;
     height: 10%;
 }
-.prefer{
+
+.prefer {
     width: 5%;
     height: 5%;
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 15%;
 }
 
-.formlist{
+.formlist {
     background-color: rgba(255, 226, 167, 1);
     width: 40%;
 }
 
-.formright{
-    background-color:rgba(255, 169, 184, 1) ; 
+.formright {
+    background-color: rgba(255, 169, 184, 1);
     width: 40%;
 
 }
