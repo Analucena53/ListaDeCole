@@ -45,6 +45,8 @@
 
     // Agregar la fila a la tabla
     document.getElementById("studentTableBody").appendChild(row);
+
+    document.getElementById('studentForm').reset();
 }
 
 function selectRol(rol) {

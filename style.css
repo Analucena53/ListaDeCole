@@ -93,6 +93,7 @@ nav {
 }
 .form-group{
     margin-top: 5%;
+    
 }
 .form-control{
     border: 2px solid rgb(0, 0, 0);
@@ -153,8 +154,6 @@ nav {
     table-layout: fixed;
 }
 
-.tableresult{
-    overflow-y: auto;
 
-}
+
 
