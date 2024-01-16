@@ -18,47 +18,62 @@
         <img class="prefer" src="Imagenes/ajuste.pdf" alt="prefer">
 
     </nav>
-    <main >
+    <main>
         <div class="contentleft">
             <button class="buttonmain">Listas:</button>
             <div class="content">
-            <section class="formlist">
-                <form id="studentForm">
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" class="form-control" id="nombre" required>
-                    </div>
+                <section class="formlist">
+                    <form id="studentForm">
+                        <div class="form-group">
+                            <label class="textform" for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" class="form-control" id="apellido" required>
-                    </div>
+                        <div class="form-group">
+                            <label class="textform" for="curso">Apellido1:</label>
+                            <input type="text" class="form-control" id="curso" required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="curso">Curso:</label>
-                        <input type="text" class="form-control" id="curso" required>
-                    </div>
+                        <div class="form-group">
+                            <label class="textform" for="curso">Apellido2:</label>
+                            <input type="text" class="form-control" id="curso" required>
+                        </div>
 
-                    <button type="button" class="btn btn-primary" onclick="agregarEstudiante()">Agregar
-                        Estudiante</button>
-                </form>
-            </section>
-            <section class="formresult">
-                <h2>List</h2>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>Curso</th>
-                        </tr>
-                    </thead>
-                    <tbody id="studentTableBody">
-                        <!-- Los datos ingresados se mostrarán aquí -->
-                    </tbody>
-                </table>
-            </section>
-        </div>
+                        <div class="form-group" id="formrol">
+                            <div>
+                                <button class="buttonrol">Rol</button>
+                            </div>
+                            <div>
+                                <label class="textform" for="curso">Curso:</label>
+                                <input type="text" class="form-control" id="curso" required>
+                                <label class="textform" for="curso">Clase:</label>
+                                <input type="text" class="form-control" id="curso" required>
+                            </div>
+                        </div>
+                            <div class="form-group">
+                                <label class="textform" for="curso">E-mail:</label>
+                                <input type="text" class="form-control" id="curso" required>
+                            </div>
+
+                            <button type="button" class="buttonform" onclick="agregarEstudiante()">Guardar</button>
+                    </form>
+                </section>
+                <section class="formresult">
+                    <h2>List</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Curso</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentTableBody">
+                            <!-- Los datos ingresados se mostrarán aquí -->
+                        </tbody>
+                    </table>
+                </section>
+            </div>
     </main>
     <script src="cole.js"></script>
 </body>
