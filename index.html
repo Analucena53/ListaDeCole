@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ListaDecole</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="Imagenes/logo.png">
 
@@ -41,7 +44,17 @@
 
                         <div class="form-group" id="formrol">
                             <div>
-                                <button class="buttonrol">Rol</button>
+                                <button class="buttonrol" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false"> Rol <span class="caret"></span>
+                                </button>
+                                <div>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#" onclick="selectRol('Profesor')">Profesor</a>
+                                        <a class="dropdown-item" href="#"
+                                            onclick="selectRol('Estudiante')">Estudiante</a>
+                                        <a class="dropdown-item" href="#" onclick="selectRol('PAS')">PAS</a>
+                                    </div>
+                                </div>
                             </div>
                             <div>
                                 <label class="textform" for="curso">Curso:</label>
@@ -49,13 +62,15 @@
                                 <label class="textform" for="curso">Clase:</label>
                                 <input type="text" class="form-control" id="curso" required>
                             </div>
-                        </div>
-                            <div class="form-group">
-                                <label class="textform" for="curso">E-mail:</label>
-                                <input type="text" class="form-control" id="curso" required>
-                            </div>
 
-                            <button type="button" class="buttonform" onclick="agregarEstudiante()">Guardar</button>
+                        </div>
+                        <div class="form-group">
+                            <label class="textform" for="curso">E-mail:</label>
+                            <input type="text" class="form-control" id="curso" required>
+                        </div>
+
+
+                        <button type="button" class="buttonform" onclick="agregarEstudiante()">Guardar</button>
                     </form>
                 </section>
                 <section class="formresult">
@@ -75,6 +90,10 @@
                 </section>
             </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <script src="cole.js"></script>
 </body>
 

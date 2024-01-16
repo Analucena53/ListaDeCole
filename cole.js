@@ -1,3 +1,8 @@
+function selectRol(rol) {
+    document.getElementById('dropdownMenuButton').innerText = rol + '';
+  }
+
+
 function agregarEstudiante() {
     // Obtener valores del formulario
     var nombre = document.getElementById('nombre').value;

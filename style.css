@@ -125,6 +125,10 @@ nav {
 
 }
 
+.caret{
+    background-color: #fff;
+}
+
 
 .buttonform{
     background-color: rgba(179, 224, 245, 1);
@@ -142,3 +146,4 @@ nav {
     transition: background-color 0.3s ease;
 
 }
+
