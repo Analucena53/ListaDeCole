@@ -26,6 +26,7 @@ body{
     background-color:#FFA9B8;
     border: 1px solid black;
     font-family: 'Acme', sans-serif;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
     font-size: 40px;
     
 }
