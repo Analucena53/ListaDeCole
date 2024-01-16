@@ -1,59 +1,83 @@
-.container {
+body {
     background-color: rgba(179, 224, 245, 1);
 
 }
 
-.navbar {
+nav {
     background-color: rgba(179, 224, 245, 1);
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-content: space-between;
-}
-
-.navbarright {
-    display: flex;
-    flex-direction: row;
 
 }
+
+.logo {
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+.prefer {
+    width: 8%;
+    height: 8%;
+    margin-top: 7.5%;
+}
+
 
 .buttonnav {
     background-color: rgba(255, 169, 184, 1);
+    width: 9%;
+    height: 5%;
+    margin-top: 10%;
     color: #fff;
     padding: 10px 20px;
     font-family: 'acme', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
-
-    border: none;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.logo {
-    width: 10%;
-    height: 10%;
-}
-
-.prefer {
-    width: 5%;
+.buttonmain {
+    background-color: white;
+    width: 35%;
     height: 5%;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+    font-family: 'acme', sans-serif;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .content {
+    background-color: rgba(179, 224, 245, 1);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 15%;
+    margin-top: 2%;
 }
 
 .formlist {
     background-color: rgba(255, 226, 167, 1);
     width: 40%;
+    margin-left: 5%;
+
 }
 
-.formright {
+.formresult {
     background-color: rgba(255, 169, 184, 1);
     width: 40%;
-
+    margin-right: 5%;
 }
