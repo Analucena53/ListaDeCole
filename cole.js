@@ -1,43 +1,45 @@
-function selectRol(rol) {
-    document.getElementById('dropdownMenuButton').innerText = rol + '';
-  }
+
 
 
   function agregarEstudiante() {
     // Obtener los valores del formulario
-    var nombre = document.getElementById("nombre").value;
-    var apellido1 = document.getElementById("apellido1").value;
-    var apellido2 = document.getElementById("apellido2").value;
-    var rol = document.getElementById("dropdownMenuButton").textContent.trim();
-    var curso = document.getElementById("curso").value;
-    var clase = document.getElementById("clase").value;
-    var email = document.getElementById("e-mail").value;
+    let nombre = document.getElementById("nombre").value;
+    let apellido1 = document.getElementById("apellido1").value;
+    let apellido2 = document.getElementById("apellido2").value;
+    let rol = document.getElementById("dropdownMenuButton").textContent.trim().substring(4); // Eliminar "Rol " del principio
+    let curso = document.getElementById("curso").value;
+    let clase = document.getElementById("clase").value;
+    let email = document.getElementById("e-mail").value;
 
     // Crear una fila para la tabla
-    var row = document.createElement("tr");
+    let row = document.createElement("tr");
 
     // Crear celdas con los datos del estudiante
-    var cellNombre = document.createElement("td");
+    let cellNombre = document.createElement("td");
     cellNombre.textContent = nombre;
     row.appendChild(cellNombre);
 
-    var cellApellido1 = document.createElement("td");
+    let cellApellido1 = document.createElement("td");
     cellApellido1.textContent = apellido1;
     row.appendChild(cellApellido1);
 
-    var cellApellido2 = document.createElement("td");
+    let cellApellido2 = document.createElement("td");
     cellApellido2.textContent = apellido2;
     row.appendChild(cellApellido2);
 
-    var cellCurso = document.createElement("td");
+    let cellRol = document.createElement("td");
+    cellRol.textContent = rol;
+    row.appendChild(cellRol);
+
+    let cellCurso = document.createElement("td");
     cellCurso.textContent = curso;
     row.appendChild(cellCurso);
 
-    var cellClase = document.createElement("td");
+    let cellClase = document.createElement("td");
     cellClase.textContent = clase;
     row.appendChild(cellClase);
 
-    var cellEmail = document.createElement("td");
+    let cellEmail = document.createElement("td");
     cellEmail.textContent = email;
     row.appendChild(cellEmail);
 
@@ -47,5 +49,7 @@ function selectRol(rol) {
 
 function selectRol(rol) {
     // Actualizar el texto del botón de rol
-    document.getElementById("dropdownMenuButton").textContent = "Rol " + rol;
+    document.getElementById("dropdownMenuButton").textContent = rol;
 }
+
+
