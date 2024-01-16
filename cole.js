@@ -3,21 +3,49 @@ function selectRol(rol) {
   }
 
 
-function agregarEstudiante() {
-    // Obtener valores del formulario
-    var nombre = document.getElementById('nombre').value;
-    var apellido = document.getElementById('apellido').value;
-    var curso = document.getElementById('curso').value;
+  function agregarEstudiante() {
+    // Obtener los valores del formulario
+    var nombre = document.getElementById("nombre").value;
+    var apellido1 = document.getElementById("apellido1").value;
+    var apellido2 = document.getElementById("apellido2").value;
+    var rol = document.getElementById("dropdownMenuButton").textContent.trim();
+    var curso = document.getElementById("curso").value;
+    var clase = document.getElementById("clase").value;
+    var email = document.getElementById("e-mail").value;
 
-    // Crear una nueva fila con los datos
-    var newRow = document.createElement('tr');
-    newRow.innerHTML = '<td>' + nombre + '</td><td>' + apellido + '</td><td>' + curso + '</td>';
+    // Crear una fila para la tabla
+    var row = document.createElement("tr");
 
-    // Agregar la nueva fila a la tabla
-    document.getElementById('inputTable').getElementsByTagName('tbody')[0].appendChild(newRow);
+    // Crear celdas con los datos del estudiante
+    var cellNombre = document.createElement("td");
+    cellNombre.textContent = nombre;
+    row.appendChild(cellNombre);
 
-    // Limpiar el formulario
-    document.getElementById('nombre').value = '';
-    document.getElementById('apellido').value = '';
-    document.getElementById('curso').value = '';
+    var cellApellido1 = document.createElement("td");
+    cellApellido1.textContent = apellido1;
+    row.appendChild(cellApellido1);
+
+    var cellApellido2 = document.createElement("td");
+    cellApellido2.textContent = apellido2;
+    row.appendChild(cellApellido2);
+
+    var cellCurso = document.createElement("td");
+    cellCurso.textContent = curso;
+    row.appendChild(cellCurso);
+
+    var cellClase = document.createElement("td");
+    cellClase.textContent = clase;
+    row.appendChild(cellClase);
+
+    var cellEmail = document.createElement("td");
+    cellEmail.textContent = email;
+    row.appendChild(cellEmail);
+
+    // Agregar la fila a la tabla
+    document.getElementById("studentTableBody").appendChild(row);
+}
+
+function selectRol(rol) {
+    // Actualizar el texto del botón de rol
+    document.getElementById("dropdownMenuButton").textContent = "Rol " + rol;
 }
