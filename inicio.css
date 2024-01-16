@@ -1,32 +1,64 @@
-
-body{
-    background-image: url(img/fondeo\ escuela\ 1.png);
-    background-size: cover;
-    background-position: center;
+body {
+    background-image: url(img-Inicio/fondeo\ escuela\ 1.png);
+    background-size:cover;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
-.logoSchool{
+.logoSchool {
     display: block;
-    margin: 210px auto 20px auto;
+    margin: 100px auto 50px auto;
+    width: 200px;
+    height: 200px;
 }
 
-
-
+.buttomEntry-a{
+    text-decoration: none;
+    width: 120px;
+    height: 46px;
+}
 
 .buttomEntry {
     display: block;
     margin: auto;
-    width: 150px;
-    height: 60px;
+    width: 120px;
+    height: 46px;
     border-radius: 30px;
     color: white;
     text-shadow: black;
-    background-color:#FFA9B8;
+    background-color: #FFA9B8;
     border: 1px solid black;
     font-family: 'Acme', sans-serif;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
-    font-size: 40px;
-    
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.buttomEntry:hover{
+    color: #FFA9B8;
+    background-color: #B3E0F5;
+}
+.buttomEntry:active{
+    color: #AF1C35;
+    background-color:#B3E0F5;
+}
+
+/*responsive TABLET*/
+@media screen and (min-width: 768px) {
+
+    .logoSchool {
+        margin: 200px auto 20px auto;
+        width: 400px;
+        height: 400px;
+    }
+    .buttomEntry-a{
+        width: 150px;
+        height: 60px;
+    }
+    .buttomEntry {
+        width: 150px;
+        height: 60px;
+        font-size: 40px;
+    }
 }
