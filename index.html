@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="Imagenes/logo.png">
-
+</head>
 <body class="cont">
-    <nav clas="contentnav">
+    <nav class="contentnav">
         <img class="logo" src="Imagenes/logo.png" alt="logo">
         <button class="buttonnav">+Lista</button>
         <button class="buttonnav">Editar</button>
@@ -70,14 +70,13 @@
                             <input type="text" class="form-control" id="e-mail" required>
                         </div>
 
-
                         <button type="button" class="buttonform" onclick="agregarEstudiante()">Enviar</button>
                     </form>
                 </section>
                 <section class="formresult">
                     <table class="table">
                         <thead>
-                            <tr>
+                            <tr class="headertable">
                                 <th>Nombre</th>
                                 <th>Apellido1</th>
                                 <th>Apellido2</th>
@@ -91,6 +90,7 @@
                             <!-- Los datos ingresados se mostrarán aquí -->
                         </tbody>
                     </table>
+                    <button type="button" class="buttonresult">Guardar</button>
                 </section>
             </div>
     </main>
@@ -98,6 +98,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="cole.js"></script>
+    
 </body>
 
 </html>

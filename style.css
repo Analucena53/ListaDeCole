@@ -1,5 +1,4 @@
-
-.cont{
+.cont {
     background-color: rgba(179, 224, 245, 1);
     width: 100%;
 
@@ -133,8 +132,8 @@ nav {
     background-color: rgba(179, 224, 245, 1);
     width: 120px;
     height: 50px;
-    margin-left: 25%;
-    margin-bottom: 4%;
+    margin-left: 60px;
+    margin-bottom: 4px;
     color: #fff;
     padding: 10px 20px;
     font-family: 'acme', sans-serif;
@@ -158,28 +157,79 @@ tbody {
     word-wrap: break-word;
 }
 
+.buttonresult {
+    background-color: rgba(179, 224, 245, 1);
+    width: 120px;
+    height: 50px;
+    margin-left: 220px;
+    margin-top: 500px;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'acme', sans-serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
-@media screen and (max-width: 750px){
+}
+
+
+@media screen and (max-width: 750px) {
 
     .content {
 
         flex-direction: column;
-      
+
     }
+
     .formlist {
-        
+
         width: 94%;
         margin-left: 3%;
-       
-        
-    
+
     }
-    
+
     .formresult {
-       
+
         width: 94%;
         margin-left: 3%;
         margin-top: 2%;
+
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .headertable {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .tableresult td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tableresult {
+        display: flex;
+        overflow-y: auto; 
         
+    }
+
+    .table{
+        display: flex;
+        overflow-x: auto;
+
+    }
+    
+
+    .buttonresult {
+       
+        margin-top: 100px;
 }
 }
