@@ -6,7 +6,7 @@
     let nombre = document.getElementById("nombre").value;
     let apellido1 = document.getElementById("apellido1").value;
     let apellido2 = document.getElementById("apellido2").value;
-    let rol = document.getElementById("dropdownMenuButton").textContent.trim().substring(4); // Eliminar "Rol " del principio
+    let rol = document.getElementById("dropdownMenuButton").value;
     let curso = document.getElementById("curso").value;
     let clase = document.getElementById("clase").value;
     let email = document.getElementById("e-mail").value;
@@ -50,8 +50,8 @@
 }
 
 function selectRol(rol) {
-    // Actualizar el texto del botón de rol
-    document.getElementById("dropdownMenuButton").textContent = rol;
+  document.getElementById("dropdownMenuButton").value = rol;
+  document.getElementById("dropdownMenuButton").textContent =  rol;
 }
 
 
