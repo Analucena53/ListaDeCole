@@ -132,7 +132,7 @@ nav {
     background-color: rgba(179, 224, 245, 1);
     width: 120px;
     height: 50px;
-    margin-left: 60px;
+    margin-left: 20%;
     margin-bottom: 4px;
     color: #fff;
     padding: 10px 20px;
@@ -161,8 +161,9 @@ tbody {
     background-color: rgba(179, 224, 245, 1);
     width: 120px;
     height: 50px;
-    margin-left: 220px;
-    margin-top: 500px;
+    margin-left: 38%;
+    margin-top: 450px;
+    margin-bottom: 2%;
     color: #fff;
     padding: 10px 20px;
     font-family: 'acme', sans-serif;
@@ -179,10 +180,10 @@ tbody {
     background-color: rgba(179, 224, 245, 1);
     font-family: 'acme', sans-serif;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
-    color: #ffffff; 
+    color: #ffffff;
     border: 2px solid rgb(0, 0, 0);
-    padding: 8px 12px; 
-    cursor: pointer; 
+    padding: 8px 12px;
+    cursor: pointer;
     border-radius: 4px;
 }
 
@@ -228,19 +229,26 @@ tbody {
 
     .tableresult {
         display: flex;
-        overflow-y: auto; 
-        
+        overflow-y: auto;
+
     }
 
-    .table{
+    .table {
         display: flex;
         overflow-x: auto;
 
     }
-    
+
 
     .buttonresult {
-       
-        margin-top: 100px;
-}
+        margin-top: 20%;
+        margin-left: 34%;
+        
+
+    }
+
+    .buttonform {
+        margin-left: 34%;
+
+    }
 }
