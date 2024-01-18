@@ -142,6 +142,13 @@ function addList() {
 
 }
 
+function editList() {
+  
+  let currentList = document.getElementById("List").value;
+
+  alert("Lista editada: " + currentList);
+}
+
 
 
 
