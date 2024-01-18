@@ -53,8 +53,4 @@ Metologia de trabajo:
 Este proyecto es el Segundo trabajo (01/2024 - 01/2024) del Bootcamp Full Stack Fem Coders F5 (Asociación Arrabal & Factoría F5), diseñado y desarrollado por el Grupo 1.
 
 Desarrolladoras del Proyecto
-
-Ana
-Sandra
-Faby
-Gaby
+-
