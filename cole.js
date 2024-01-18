@@ -1,7 +1,25 @@
 
+function dataCorrect(nombre, apellido1, apellido2, rol, curso, clase, email) {
+  // Verificar que todos los campos estén completos
+  if (!nombre || !apellido1 || !apellido2 || !rol || !curso || !clase || !email) {
+    alert("Por favor, complete todos los campos.");
+    return false;
+  }
 
+  // Validar el formato del correo electrónico
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert("Por favor, introduzca una dirección de correo electrónico válida.");
+    return false;
+  }
 
-function agregarEstudiante() {
+  // Otros criterios de validación según tus necesidades
+
+  // Si la función llega hasta aquí, los datos son válidos
+  return true;
+}
+
+function addStudent() {
   // Obtener los valores del formulario
   let nombre = document.getElementById("nombre").value;
   let apellido1 = document.getElementById("apellido1").value;
@@ -10,6 +28,11 @@ function agregarEstudiante() {
   let curso = document.getElementById("curso").value;
   let clase = document.getElementById("clase").value;
   let email = document.getElementById("e-mail").value;
+
+   // Validar los datos
+   if (!dataCorrect(nombre, apellido1, apellido2, rol, curso, clase, email)) {
+    return; // Detener la ejecución si los datos no son válidos
+  }
   
 
   // Crear una fila para la tabla
@@ -50,7 +73,7 @@ function agregarEstudiante() {
   btnEliminar.textContent = "X";
   btnEliminar.className = "eliminar-button";
   btnEliminar.onclick = function() {
-    eliminarEstudiante(row);
+    deletStudent(row);
   };
   cellEliminar.appendChild(btnEliminar);
   row.appendChild(cellEliminar);
@@ -69,7 +92,7 @@ function selectRol(rol) {
 
 }
 
-function eliminarEstudiante(row) {
+function deletStudent(row) {
   // Obtener la referencia a la tabla y eliminar la fila
   document.getElementById("studentTableBody").removeChild(row);
 }
@@ -85,8 +108,22 @@ function delet() {
   for (let i = rowCount - 1; i >= 0; i--) {
     table.deleteRow(i);
   }
+
 }
 
+function delettable() {
+  // Obtener la referencia de la tabla
+  let table = document.getElementById("studentTableBody");
+
+  // Obtener la cantidad de filas en la tabla
+  let rowCount = table.rows.length;
+
+  // Eliminar las filas una por una (empezando desde el final para evitar problemas con los índices)
+  for (let i = rowCount - 1; i >= 0; i--) {
+    table.deleteRow(i);
+  }
+  alert("Lista guardada");
+}
 
 
 
