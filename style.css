@@ -196,7 +196,7 @@ tbody {
     background-color:#B3E0F5;
 }
 
-.eliminar-button {
+.delete-button {
     background-color: rgba(179, 224, 245, 1);
     font-family: 'acme', sans-serif;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);

@@ -71,7 +71,7 @@ function addStudent() {
   let cellEliminar = document.createElement("td");
   let btnEliminar = document.createElement("button");
   btnEliminar.textContent = "X";
-  btnEliminar.className = "eliminar-button";
+  btnEliminar.className = "delete-button";
   btnEliminar.onclick = function() {
     deletStudent(row);
   };
