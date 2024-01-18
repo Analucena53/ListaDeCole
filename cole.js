@@ -122,8 +122,26 @@ function delettable() {
   for (let i = rowCount - 1; i >= 0; i--) {
     table.deleteRow(i);
   }
+  document.getElementById('List').value = "";
+
   alert("Lista guardada");
 }
+
+function addList() {
+  // Obtener la referencia de la tabla
+  let table = document.getElementById("studentTableBody");
+
+  // Obtener la cantidad de filas en la tabla
+  let rowCount = table.rows.length;
+
+  // Eliminar las filas una por una (empezando desde el final para evitar problemas con los índices)
+  for (let i = rowCount - 1; i >= 0; i--) {
+    table.deleteRow(i);
+  }
+  document.getElementById('List').value = "";
+
+}
+
 
 
 
