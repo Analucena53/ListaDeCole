@@ -55,6 +55,9 @@ Este proyecto es el Segundo trabajo (01/2024 - 01/2024) del Bootcamp Full Stack 
 Desarrolladoras del Proyecto
 
 https://github.com/Analucena53/ListaDeCole/tree/Ana
+
 https://github.com/Analucena53/ListaDeCole/tree/Faby
+
 https://github.com/Analucena53/ListaDeCole/tree/Gaby
+
 https://github.com/Analucena53/ListaDeCole/tree/Sandra
