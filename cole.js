@@ -108,7 +108,7 @@ function delet() {
   for (let i = rowCount - 1; i >= 0; i--) {
     table.deleteRow(i);
   }
-
+  alert("Lista Eliminada");
 }
 
 function delettable() {
@@ -124,7 +124,7 @@ function delettable() {
   }
   document.getElementById('List').value = "";
 
-  alert("Lista guardada");
+  alert("Lista guardada con éxito");
 }
 
 function addList() {
@@ -140,13 +140,14 @@ function addList() {
   }
   document.getElementById('List').value = "";
 
+  alert("Nueva Lista");
 }
 
 function editList() {
   
   let currentList = document.getElementById("List").value;
 
-  alert("Lista editada: " + currentList);
+  alert("Lista Editada: " + currentList);
 }
 
 

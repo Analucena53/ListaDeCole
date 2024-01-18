@@ -45,6 +45,15 @@ nav {
     transition: background-color 0.3s ease;
 }
 
+.buttonnav:hover{
+    
+    background-color: rgba(255, 226, 167, 1);
+}
+.buttonnav:active{
+    color: #FFA9B8;
+    background-color:rgba(255, 226, 167, 1);
+}
+
 .form-tittlelist {
     width: 50%;
     margin-left: 2%;
@@ -59,6 +68,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2%;
+    margin-bottom: 3%;
 }
 
 .formlist {
@@ -175,6 +185,15 @@ tbody {
     cursor: pointer;
     transition: background-color 0.3s ease;
 
+}
+
+.buttonform:hover, .buttonresult:hover{
+    color: #FFA9B8;
+    background-color: #B3E0F5;
+}
+.buttonform:active, .buttonresult:active{
+    color: #FFCC00;
+    background-color:#B3E0F5;
 }
 
 .eliminar-button {
