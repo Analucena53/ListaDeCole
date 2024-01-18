@@ -132,8 +132,8 @@ nav {
     background-color: rgba(179, 224, 245, 1);
     width: 120px;
     height: 50px;
-    margin-left: 20%;
-    margin-bottom: 4px;
+    margin-left: 32%;
+    margin-bottom: 3px;
     color: #fff;
     padding: 10px 20px;
     font-family: 'acme', sans-serif;
@@ -161,9 +161,9 @@ tbody {
     background-color: rgba(179, 224, 245, 1);
     width: 120px;
     height: 50px;
-    margin-left: 38%;
+    margin-left: 45%;
     margin-top: 450px;
-    margin-bottom: 2%;
+    margin-bottom: 3px;
     color: #fff;
     padding: 10px 20px;
     font-family: 'acme', sans-serif;
@@ -188,7 +188,7 @@ tbody {
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
 
     .content {
 
@@ -211,7 +211,18 @@ tbody {
 
     }
 
+    .buttonresult {
+        margin-left: 42%;
+        margin-top: 450px;
+    }
+
+    .buttonform {
+
+       margin-left: 42%;
+        
+    }
 }
+
 
 @media screen and (max-width: 550px) {
 
@@ -243,7 +254,7 @@ tbody {
     .buttonresult {
         margin-top: 20%;
         margin-left: 34%;
-        
+
 
     }
 
