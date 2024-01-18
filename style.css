@@ -175,7 +175,16 @@ tbody {
 
 }
 
-
+.eliminar-button {
+    background-color: rgba(179, 224, 245, 1);
+    font-family: 'acme', sans-serif;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    color: #ffffff; 
+    border: 2px solid rgb(0, 0, 0);
+    padding: 8px 12px; 
+    cursor: pointer; 
+    border-radius: 4px;
+}
 
 
 @media screen and (max-width: 750px) {

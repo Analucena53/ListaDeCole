@@ -47,7 +47,8 @@ function agregarEstudiante() {
   // Crear celda para el botón de eliminar
   let cellEliminar = document.createElement("td");
   let btnEliminar = document.createElement("button");
-  btnEliminar.textContent = "Eliminar";
+  btnEliminar.textContent = "X";
+  btnEliminar.className = "eliminar-button";
   btnEliminar.onclick = function() {
     eliminarEstudiante(row);
   };
