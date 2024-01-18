@@ -18,12 +18,12 @@ Botones de Guardar y Cargar:
 Incluye botones para guardar y cargar listas, aunque inicialmente no serán funcionales.
 
 Responsividad:
-La aplicación es responsive en ambas vistas, adaptándose a dispositivos desde el movil ifone 8, desktop, el tamaño standar, hasta la tablet ipad Air.
+La aplicación es responsive en varias vistas, adaptándose a dispositivos desde el móvil iPhone 8, pasando por la tablet ipad Air, hasta llegar al desktop con tamaño standar.
 
 Gestión de Versiones con GIT:
-Se sigue un modelo de trabajo en GIT con dos ramas (main y develop) para facilitar el desarrollo y la colaboración.
+Se sigue un modelo de trabajo en GIT con dos ramas (main y develop1) para facilitar el desarrollo y la colaboración.
 
-Se implementa librerías de Estilos, Flex.
+Se implementa librerías de Estilos, Flex-box.
 
 El código sigue buenas prácticas y se enfoca en mantener un código limpio y legible.
 Se utiliza HTML semántico para mejorar la accesibilidad y comprensión del código.
@@ -32,7 +32,7 @@ Se incorporan animaciones tanto en JavaScript como en CSS para mejorar la experi
 
 Mensajes de Alertas: 
 
-El botón para guardar lista dispara un mensaje de alarma simulado indicando que la lista se ha guardado correctamente
+El botón para guardar lista dispara un mensaje de alerta simulado indicando que la lista se ha guardado correctamente.
 
 Se implementan validaciones en los campos del formulario para garantizar la integridad de los datos.
 
@@ -43,12 +43,12 @@ Con este URL puedes acceder al proyecto.
  Tecnologías Utilizadas
 - HTML
 - CSS
--Java Script
--DOM
+- Java Script
+- DOM
 
 
 Metologia de trabajo: 
--MUB programing
+-Mod programing.
 
 Este proyecto es el Segundo trabajo (01/2024 - 01/2024) del Bootcamp Full Stack Fem Coders F5 (Asociación Arrabal & Factoría F5), diseñado y desarrollado por el Grupo 1.
 
