@@ -1,26 +1,26 @@
 
 function dataCorrect(nombre, apellido1, apellido2, rol, curso, clase, email) {
-  // Verificar que todos los campos estén completos
+
   if (!nombre || !apellido1 || !apellido2 || !rol || !curso || !clase || !email) {
     alert("Por favor, complete todos los campos.");
     return false;
   }
 
-  // Validar el formato del correo electrónico
+
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     alert("Por favor, introduzca una dirección de correo electrónico válida.");
     return false;
   }
 
-  // Otros criterios de validación según tus necesidades
 
-  // Si la función llega hasta aquí, los datos son válidos
+
+
   return true;
 }
 
 function addStudent() {
-  // Obtener los valores del formulario
+
   let nombre = document.getElementById("nombre").value;
   let apellido1 = document.getElementById("apellido1").value;
   let apellido2 = document.getElementById("apellido2").value;
@@ -29,16 +29,14 @@ function addStudent() {
   let clase = document.getElementById("clase").value;
   let email = document.getElementById("e-mail").value;
 
-   // Validar los datos
-   if (!dataCorrect(nombre, apellido1, apellido2, rol, curso, clase, email)) {
-    return; // Detener la ejecución si los datos no son válidos
+  if (!dataCorrect(nombre, apellido1, apellido2, rol, curso, clase, email)) {
+    return;
   }
-  
 
-  // Crear una fila para la tabla
+
   let row = document.createElement("tr");
 
-  // Crear celdas con los datos del estudiante
+
   let cellNombre = document.createElement("td");
   cellNombre.textContent = nombre;
   row.appendChild(cellNombre);
@@ -67,18 +65,18 @@ function addStudent() {
   cellEmail.textContent = email;
   row.appendChild(cellEmail);
 
-  // Crear celda para el botón de eliminar
+
   let cellEliminar = document.createElement("td");
   let btnEliminar = document.createElement("button");
   btnEliminar.textContent = "X";
   btnEliminar.className = "delete-button";
-  btnEliminar.onclick = function() {
+  btnEliminar.onclick = function () {
     deletStudent(row);
   };
   cellEliminar.appendChild(btnEliminar);
   row.appendChild(cellEliminar);
 
-  // Agregar la fila a la tabla
+
   document.getElementById("studentTableBody").appendChild(row);
 
   document.getElementById('studentForm').reset();
@@ -93,18 +91,18 @@ function selectRol(rol) {
 }
 
 function deletStudent(row) {
-  // Obtener la referencia a la tabla y eliminar la fila
+
   document.getElementById("studentTableBody").removeChild(row);
 }
 
 function delet() {
-  // Obtener la referencia de la tabla
+
   let table = document.getElementById("studentTableBody");
 
-  // Obtener la cantidad de filas en la tabla
+
   let rowCount = table.rows.length;
 
-  // Eliminar las filas una por una (empezando desde el final para evitar problemas con los índices)
+
   for (let i = rowCount - 1; i >= 0; i--) {
     table.deleteRow(i);
   }
@@ -112,13 +110,13 @@ function delet() {
 }
 
 function delettable() {
-  // Obtener la referencia de la tabla
+
   let table = document.getElementById("studentTableBody");
 
-  // Obtener la cantidad de filas en la tabla
+
   let rowCount = table.rows.length;
 
-  // Eliminar las filas una por una (empezando desde el final para evitar problemas con los índices)
+
   for (let i = rowCount - 1; i >= 0; i--) {
     table.deleteRow(i);
   }
@@ -128,13 +126,13 @@ function delettable() {
 }
 
 function addList() {
-  // Obtener la referencia de la tabla
+
   let table = document.getElementById("studentTableBody");
 
-  // Obtener la cantidad de filas en la tabla
+
   let rowCount = table.rows.length;
 
-  // Eliminar las filas una por una (empezando desde el final para evitar problemas con los índices)
+
   for (let i = rowCount - 1; i >= 0; i--) {
     table.deleteRow(i);
   }
@@ -144,7 +142,7 @@ function addList() {
 }
 
 function editList() {
-  
+
   let currentList = document.getElementById("List").value;
 
   alert("Lista Editada: " + currentList);
