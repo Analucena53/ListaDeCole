@@ -107,6 +107,8 @@ function delet() {
     table.deleteRow(i);
   }
   alert("Lista Eliminada");
+
+  document.getElementById('studentForm').reset();
 }
 
 function delettable() {
@@ -123,6 +125,8 @@ function delettable() {
   document.getElementById('List').value = "";
 
   alert("Lista guardada con éxito");
+
+  document.getElementById('studentForm').reset();
 }
 
 function addList() {
@@ -139,6 +143,8 @@ function addList() {
   document.getElementById('List').value = "";
 
   alert("Nueva Lista");
+
+  document.getElementById('studentForm').reset();
 }
 
 function editList() {
